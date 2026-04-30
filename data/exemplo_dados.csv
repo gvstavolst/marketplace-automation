@@ -1,0 +1,11 @@
+id,data,plataforma,produto,valor,status
+1,2025-01-05,Mercado Livre,Ração Vegana 1kg,89.90,entregue
+2,2025-01-06,Shopee,Ração Vegana 500g,49.90,entregue
+3,2025-01-07,Magalu,Petisco Natural,32.50,entregue
+4,2025-01-08,Mercado Livre,Ração Vegana 1kg,89.90,entregue
+5,2025-01-09,Shopee,Ração Vegana 1kg,89.90,entregue
+6,2025-01-10,Mercado Livre,Petisco Natural,32.50,entregue
+7,2025-01-11,Magalu,Ração Vegana 500g,49.90,entregue
+8,2025-01-12,Shopee,Petisco Natural,32.50,cancelado
+9,2025-01-13,Mercado Livre,Ração Vegana 1kg,89.90,entregue
+10,2025-01-14,Magalu,Ração Vegana 1kg,89.90,entregue
