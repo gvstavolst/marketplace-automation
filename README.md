@@ -1,82 +1,66 @@
-# ⚙️ Marketplace Automation
+# Marketplace Automation
 
-> Scripts Python para **automação operacional** em e-commerce: consolidação de dados, monitoramento de webhooks e integração de APIs ERP/WMS.
+Scripts Python para automação operacional em e-commerce: consolidação de dados de vendas, monitoramento de webhooks e integração de APIs ERP/WMS.
 
----
+## Sobre o projeto
 
-## 📌 Sobre o Projeto
+Desenvolvido durante atuação como Analista de Marketplace para eliminar processos manuais, reduzir erros operacionais e garantir rastreabilidade de dados em ambiente de e-commerce. Os scripts foram utilizados em produção com integração entre ERP (Bling) e WMS (SmartGo).
 
-Desenvolvido durante atuação como **Analista de Marketplace** para eliminar processos manuais, reduzir erros operacionais e garantir rastreabilidade de dados em ambiente de e-commerce.
+Resultados obtidos:
+- Redução de aproximadamente 30% no tempo de análise operacional
+- Eliminação de erros de reporte manual
+- Monitoramento em tempo real de falhas em webhooks de API
 
-**Impacto gerado:**
-- ⏱️ Redução de ~30% no tempo de análise operacional
-- ❌ Eliminação de erros de reporte manual
-- 🔄 Monitoramento em tempo real de falhas em webhooks de API
-
----
-
-## 🛠️ Tecnologias
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![API REST](https://img.shields.io/badge/API_REST-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-
----
-
-## 📁 Estrutura
+## Estrutura
 
 ```
 marketplace-automation/
-├── relatorio_vendas.py      # Consolida dados de vendas em relatório
-├── webhook_monitor.py       # Monitora falhas em webhooks de API
-├── dashboard_export.py      # Exporta KPIs para Google Sheets / CSV
+├── relatorio_vendas.py        # Consolida dados de vendas em relatorio
+├── webhook_monitor.py         # Monitora falhas em webhooks de API
+├── dashboard_export.py        # Exporta KPIs para CSV
 ├── data/
-│   └── exemplo_dados.csv      # Dados anonimizados para teste
+│   └── exemplo_dados.csv          # Dados anonimizados para teste
 ├── requirements.txt
 └── README.md
 ```
 
----
-
-## 🚀 Como Usar
+## Como usar
 
 ```bash
-# Clonar
 git clone https://github.com/gvstavolst/marketplace-automation
 cd marketplace-automation
-
-# Instalar dependências
 pip install -r requirements.txt
 
-# Gerar relatório de vendas
+# Gerar relatorio de vendas
 python relatorio_vendas.py
 
 # Monitorar webhooks
 python webhook_monitor.py
 ```
 
----
+## Scripts
 
-## 📊 Scripts
-
-| Script | Função |
+| Script | Funcao |
 |---|---|
-| `relatorio_vendas.py` | Lê CSV de vendas, calcula KPIs e exporta sumário |
-| `webhook_monitor.py` | Simula monitoramento de endpoints e detecta falhas |
-| `dashboard_export.py` | Consolida indicadores e gera relatório final |
+| `relatorio_vendas.py` | Le CSV de vendas, calcula KPIs e exporta sumario |
+| `webhook_monitor.py` | Monitora endpoints e detecta falhas de sincronizacao |
+| `dashboard_export.py` | Consolida indicadores e gera relatorio final |
 
----
+## Conexao com seguranca da informacao
 
-## 🔐 Conexão com Segurança da Informação
+O projeto envolve praticas relacionadas a seguranca de sistemas:
 
-Este projeto envolve práticas diretamente relacionadas à área de segurança:
+- Monitoramento de webhooks com deteccao de anomalias em logs
+- Integracao de APIs REST com autenticacao, validacao e tratamento de erros
+- Controle de integridade e rastreabilidade do fluxo de dados
 
-- **Monitoramento de webhooks** → análise de logs e detecção de anomalias
-- **Integração de APIs REST** → autenticação, validação e tratamento de erros
-- **Integridade de dados** → rastreabilidade e controle de fluxo de informações
+## Tecnologias
 
----
+- Python
+- Pandas
+- API REST (Bling, SmartGo)
 
-## 👤 Autor
+## Autor
 
-**Gustavo Lemos Souto** — [linkedin.com/in/gustavolemossouto](https://linkedin.com/in/gustavolemossouto)
+Gustavo Lemos Souto
+[linkedin.com/in/gustavolemossouto](https://linkedin.com/in/gustavolemossouto)
